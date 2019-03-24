@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+	margin: 0;
+	box-sizing: border-box;
+}
+#navbar{
+	position: fixed;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	min-width: 300px;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+header{
+	font-weight: bold;
+    font-size: 25px;
+}
+#navbar header{
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	text-align: center;
+	padding: 12px 0px;
+    font-size: 30px;
+    background-color: #DCE813;
+}
+#links{
+	width: 90%;
+	overflow-x: hidden;
+}
+#links a{
+	display: block;
+	border-radius: 4px;
+	text-decoration: none;
+	width: 100%;
+	margin: 5px 5px;
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #41423D;
+	box-shadow: -1px -1px 4px #E3E5CB;
+}
+#main-doc{
+	position: absolute;
+	margin-left: 300px;
+	padding: 20px;
+}
+.main-section p{
+	padding: 0 10px;
+}
+code{
+   display: block;
+   width: 90%;
+   height: auto;
+   margin: auto;
+   padding: 10px;
+   line-height: 20px;
+   background-color: #EBF3EC;
+   border-radius: 4px;
+}
+#links a:hover{
+	color: white;
+	font-weight: bold;
+	background-color: black;
+	animation-name: btn;
+	animation-duration: 500ms;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes btn{
+	0%{
+       background-color: #5F5F5F;
+	}
+	50%{
+       background-color: #0D0D0D;
+	}
+	100%{
+       background-color: black;
+	}
+}
+
+@media screen and (max-width: 900px){
+	#navbar{
+		position: static;
+		width: 100%;
+		height:300px;
+		
+	}
+	#main-doc{
+		position: static;
+		width: 100%;
+		margin: 0;
+	}
+}
